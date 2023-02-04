@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dashboard-sh/static/css/main.1dc6bb62.css",
+    "main.js": "/dashboard-sh/static/js/main.d89cb60f.js",
+    "static/media/dashboard2.svg": "/dashboard-sh/static/media/dashboard2.111cc49115172277891468905e81a98d.svg",
+    "static/media/discount-shape 1.svg": "/dashboard-sh/static/media/discount-shape 1.5230029f4e637c534c143c4d95cf421f.svg",
+    "static/media/wallet-money 2.svg": "/dashboard-sh/static/media/wallet-money 2.25d824b57e5c5a753432296807e7285d.svg",
+    "static/media/3d-square 1.svg": "/dashboard-sh/static/media/3d-square 1.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
+    "static/media/message-question 1.svg": "/dashboard-sh/static/media/message-question 1.5d23912a887f9edc9d9f8d957ec960e6.svg",
+    "static/media/user-square 1.svg": "/dashboard-sh/static/media/user-square 1.27617add0f452c671fec310dc74fcb18.svg",
+    "static/media/key-square.svg": "/dashboard-sh/static/media/key-square.153a0eb179be0548729792a4f21fc52e.svg",
+    "index.html": "/dashboard-sh/index.html",
+    "static/media/search.svg": "/dashboard-sh/static/media/search.d555a35800fec6f7c1928aef95546ef7.svg",
+    "static/media/chevron-right.svg": "/dashboard-sh/static/media/chevron-right.618c411d724ff239093f3539c12387f1.svg",
+    "static/media/chevron-right 2.svg": "/dashboard-sh/static/media/chevron-right 2.30791e4d9e2fd6b6a9f50cf9aeeb41fd.svg",
+    "main.1dc6bb62.css.map": "/dashboard-sh/static/css/main.1dc6bb62.css.map",
+    "main.d89cb60f.js.map": "/dashboard-sh/static/js/main.d89cb60f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dc6bb62.css",
+    "static/js/main.d89cb60f.js"
+  ]
+}
