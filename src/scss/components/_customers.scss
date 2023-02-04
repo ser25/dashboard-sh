@@ -20,7 +20,7 @@
   height: 38px;
 
   @media (min-width:800px) {
-    max-width: 216px;
+    width: 216px;
     align-self: flex-end;
   }
 
@@ -48,7 +48,7 @@
     //border-radius: 0.1875rem;
     height: 100%;
     color: #000;
-    padding: 10px 10px 40px;
+    padding: 10px 0 10px 40px;
     border: none;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
