@@ -1,0 +1,46 @@
+.header {
+  padding-top: 15px;
+  @media (min-width:600px) {
+    padding: 36px 0 64px 0;
+  }
+  &__container {
+    @media (min-width:1080px) {
+      display: flex;
+    }
+  }
+
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: (36 / 24);
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:599.97px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width:1080px) {
+      margin-right: 160px;
+    }
+    @media (min-width:1080px) {
+      display: block;
+    }
+  }
+}
+
+.burger{
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  justify-self: center;
+
+  @media (min-width:1080px) {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,110 @@
+.customers__page{
+  //max-width: 968px;
+  @media (min-width: 1340.97px){
+    padding-right: 35px;
+  }
+  @media (min-width: 1079.97px){
+    max-width: 968px;
+  }
+}
+
+.customers__container{
+  @media (min-width: 1079.97px){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.search {
+
+  height: 38px;
+
+  @media (min-width:800px) {
+    max-width: 216px;
+    align-self: flex-end;
+  }
+
+  &__form {
+    height: 100%;
+    background-color: #F9FBFF;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 8px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    //border-radius: 0.1875rem;
+    height: 100%;
+    color: #000;
+    padding: 10px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+
+    &::placeholder {
+      color: #B5B7C0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: (18 / 12);
+
+      letter-spacing: -0.01em;
+    }
+    &:focus{
+      border: 1px solid black;
+
+    }
+  }
+}
+
+.header-customers {
+  padding-top: 30px;
+
+  column-gap: 506px;
+  margin-bottom: 40px;
+  @media (max-width: 799.97px){
+    @include adaptivValue(margin-bottom, 40 , 10 );
+  }
+  @media (max-width: 1399.97px){
+    @include adaptivValue(column-gap, 506 , 50 );
+  }
+  @media (min-width: 800px){
+    display: flex;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: (33/22);
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: (21/14);
+    letter-spacing: -0.01em;
+    color: #16C098;
+    @media (max-width: 799.97px){
+     margin-bottom: 15px;
+    }
+  }
+}
+
+@import "customersTable";

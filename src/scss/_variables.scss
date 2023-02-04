@@ -1,0 +1,55 @@
+$black: #232323;
+
+$gray-line: #f6f6f6;
+$orange: #fe5f1e;
+
+$container-width: 90%;
+
+$duration: 0.15s;
+
+$maxWidth: 1140;
+$Purple: #7A66CC;
+$Black: #1A0A03;
+$White: #FFFFFF;
+
+/*-------------------------------adaptivValue----------------------------------------------------------------------*/
+
+ @mixin adaptivValue ($property, $stratSize, $miniSize){
+  $addSize: $stratSize - $miniSize;
+  #{$property}: calc(#{$miniSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+};
+
+.button {
+  padding: 4px 18px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease 0s;
+  &_green {
+    background: rgba(22, 192, 152, 0.38);
+    border: 1px solid #00B087;
+    color: #008767;
+  }
+  &_red {
+    background: #FFC5C5;
+    border: 1px solid #DF0404;
+    color: #DF0404;
+  }
+  @media (max-width: 424.97px) {
+    display: inline-block;
+  }
+}
+
+@media (any-hover: hover) {
+  .button:hover {
+    box-shadow: 0 4px 25px rgba(232, 170, 49, 0.63);
+  }
+}
+
+.button_border {
+  background-color: #fff;
+  border: 1px solid #e8aa31;
+  color: #e8aa31;
+  box-shadow: none;
+}

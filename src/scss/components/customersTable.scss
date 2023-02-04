@@ -1,0 +1,174 @@
+
+.customers {
+
+  &__container {
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    color: #1F2937;
+
+    &:not(:last-child) {
+      margin-bottom: 150px;
+      //@media (max-width: 1209.97px){
+      //  @include adaptivValue(margin-bottom, 150 , 25);
+      //  @include adaptivValue(font-size, 48 , 36);
+      //}
+    }
+
+  }
+
+  &__items {
+  }
+
+  &__button {
+    background-color: transparent;
+    position: relative;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    display: none;
+    @media (max-width: 549.97px) {
+      display: block;
+    }
+  }
+
+  &__body {
+
+    //@media (min-width: 1340.97px) {
+    //  padding: 0px 44px 0px 38px;
+    //}
+    @media (max-width: 799.97px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+      & *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 559.97px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 424.97px) {
+      display: block;
+      text-align: center;
+    }
+
+
+  }
+
+  &__item {
+
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6B7280;
+    @media (min-width:800px) {
+      &::after{
+        content: "";
+        position: absolute;
+        top: 45px;
+        left: 0;
+        height: 1px;
+        background-color: #EEEEEE;
+        width: 100%;
+        transition: all .3s ease 0s;
+      }
+    }
+
+
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 799.97px) {
+      display: flex;
+    }
+
+  }
+}
+
+.item-customers {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #292D32;
+  &_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: (21 / 14);
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+
+    color: #B5B7C0;
+    @media (min-width: 800px) {
+      &:not(:last-child) {
+        margin-bottom: 38px;
+      }
+    }
+
+  }
+
+}
+
+.customers__items._init .customers__button {
+  cursor: pointer;
+}
+
+.customers__items._init .customers__button {
+  padding: 10px 40px 10px 0;
+}
+
+.customers__items._init .customers__button::before,
+.customers__items._init .customers__button::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  //background-color: $Orange;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  transition: transform 0.3s ease 0s;
+}
+
+.customers__items._init .customers__button::after {
+  transform: rotate(-90deg);
+}
+
+.customers__items._init .customers__button._spoller-active::after {
+  transform: rotate(0deg);
+}
+
+
+@media (min-width: 800px) {
+  .item-customers__customers-name {
+    width: 118px;
+  }
+  .item-customers__company {
+    width: 70px;
+  }
+  .item-customers__phone-number {
+    width: 109px;
+  }
+  .item-customers__email {
+    width: 169px;
+  }
+  .item-customers__country {
+    width: 94px;
+  }
+  .item-customers__status {
+    width: 84px;
+  }
+}
+

@@ -1,0 +1,38 @@
+@import './variables';
+@import './libs/normalize';
+
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/customers";
+@import "./components/sidebar-active-bur";
+@import "./components/footer";
+@import "./components/customersFooter";
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  //@media (max-width: 645px) {
+  //  width: calc(100vw - 30px);
+  //  margin-top: 15px;
+  //}
+}
+
+[class*="__container"] {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+
+
+
+
+
+
